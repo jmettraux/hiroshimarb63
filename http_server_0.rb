@@ -1,3 +1,4 @@
+# encoding: UTF-8
 
 require 'socket'
 
@@ -12,6 +13,7 @@ loop do
     s += client.read(1)
   end
   puts s
+  s += "やま"
 
   client.puts s
   client.close
